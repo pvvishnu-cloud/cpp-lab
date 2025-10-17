@@ -9,10 +9,10 @@ protected:
 public:
     void getData() {
         cout << "Enter name: ";
-        getline(cin, name);
+        cin>> name;
         cout << "Enter age: ";
         cin >> age;
-        cin.ignore(); 
+        
     }
 
     void display() const {
