@@ -14,7 +14,6 @@ public:
         cin >> age;
         
     }
-
     void display() const {
         cout << "Name: " << name << endl;
         cout << "Age: " << age << endl;
