@@ -36,11 +36,11 @@ int main() {
     string name, address, telephoneNo;
     int numberOfCalls;
     cout << "Enter Name: ";
-    getline(cin, name);
+    cin>> name;
     cout << "Enter Address: ";
-    getline(cin, address);
+    cin>> address;
     cout << "Enter Telephone Number: ";
-    getline(cin, telephoneNo);
+    cin>> telephoneNo;
     cout << "Enter Number of Calls: ";
     cin >> numberOfCalls;
     TelephoneBill tb(name, address, telephoneNo, numberOfCalls);
