@@ -9,7 +9,6 @@ public:
         acc_number = accNo;
         balance = bal;
     }
-
     void deposit(double amount) {
         balance += amount;
         cout << "Deposited: " << amount << ", New Balance: " << balance << endl;
