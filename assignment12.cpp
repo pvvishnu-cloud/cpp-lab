@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class online_shopping {
 public:
 string item_name = "jack daniels";
