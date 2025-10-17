@@ -1,30 +1,24 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 class TelephoneBill {
 private:
     string name;
     string address;
     string telephoneNo;
     int numberOfCalls;
-
 public:
-    
     TelephoneBill(string n, string addr, string tel, int calls) {
         name = n;
         address = addr;
         telephoneNo = tel;
         numberOfCalls = calls;
     }
-
     friend void calculateBill(TelephoneBill &tb);
 };
-
 void calculateBill(TelephoneBill &tb) {
     const int chargePerCall = 2;
     int amount = tb.numberOfCalls * chargePerCall;
-
     cout << "\n----- Telephone Bill -----" << endl;
     cout << "Name: " << tb.name << endl;
     cout << "Address: " << tb.address << endl;
