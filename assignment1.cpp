@@ -1,26 +1,20 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 class Car {
 private:
     string brand;
     string model;
     int year;
-
 public:
-    
     void readData() {
         cout << "Enter brand: ";
-        getline(cin, brand);
+        cin>> brand;
         cout << "Enter model: ";
-        getline(cin, model);
+        cin>> model;
         cout << "Enter year: ";
         cin >> year;
-        cin.ignore(); 
-    }
-
-    
+    } 
     void displayData() const {
         cout << "Car Details: " << brand << " " << model << ", Year: " << year << endl;
     }
@@ -48,6 +42,4 @@ int main() {
 
     cout << "Car 3: ";
     car3.displayData();
-
-    return 0;
 }
